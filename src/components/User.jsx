@@ -23,7 +23,7 @@ const UserList = () => {
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setLoading(false); // Set loading to false even if there is an error
+        setLoading(false);
       });
   }, []);
 
@@ -40,11 +40,11 @@ const UserList = () => {
   const currentItems = filteredUsers.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredUsers.length / itemsPerPage);
 
-  // Change page
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <Container maxWidth="sm">
+      <h2 style={{ textAlign: "center" }}>User List</h2>
       <SearchBar onSearch={handleSearch} />
       {loading
         ? Array.from({ length: itemsPerPage }).map((_, index) => (
@@ -62,9 +62,10 @@ const UserList = () => {
                 alignItems="center"
                 p={2}
                 m={1}
-                border={1}
+                border={2}
                 borderRadius={2}
                 borderColor="grey.300"
+                style={{ border: "3px solid black" }}
               >
                 <Avatar
                   src={user.avatar}

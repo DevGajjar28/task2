@@ -27,8 +27,8 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
           backgroundColor: i === currentPage ? "#000" : "transparent",
           color: i === currentPage ? "#fff" : "#000",
           "&:hover": {
-            backgroundColor: "#4c3986",
-            color: "#000",
+            backgroundColor: "#000",
+            color: "#fff",
           },
         }}
       >

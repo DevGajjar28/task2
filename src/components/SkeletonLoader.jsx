@@ -8,8 +8,8 @@ const UserSkeletonLoader = () => (
     width={400}
     height={100}
     viewBox="0 0 400 100"
-    backgroundColor="#f3f3f3"
-    foregroundColor="#ecebeb"
+    backgroundColor="#c7c4c4"
+    foregroundColor="#c7c4c4"
   >
     <circle cx="40" cy="40" r="40" />
     <rect x="90" y="10" rx="4" ry="4" width="300" height="13" />

@@ -3,7 +3,7 @@ import React from "react";
 
 const NavigationBar = () => {
   return (
-    <AppBar position="static" sx={{ background: "#7469B6" }}>
+    <AppBar position="static" sx={{ background: "#000" }}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           User Details

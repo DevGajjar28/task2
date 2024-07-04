@@ -7,8 +7,8 @@ const RelatedUserSkeletonLoader = () => (
     width={150}
     height={150}
     viewBox="0 0 150 150"
-    backgroundColor="#f3f3f3"
-    foregroundColor="#ecebeb"
+    backgroundColor="#c7c4c4"
+    foregroundColor="#c7c4c4"
   >
     <circle cx="75" cy="40" r="30" />
     <rect x="25" y="80" rx="4" ry="4" width="100" height="13" />

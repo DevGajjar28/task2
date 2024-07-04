@@ -2,14 +2,13 @@
 import React from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import BackBtn from './components/BackBtn';
-import NavigationBar from './components/NavigationBar';
 import User from './components/User';
 import UserDetails from './components/UserDeatails';
 
 const App = () => {
   return (
     <Router>
-      <NavigationBar />
+      {/* <NavigationBar /> */}
       <BackBtn />
       <Routes>
         <Route path="/" element={<User />} />

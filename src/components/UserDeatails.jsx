@@ -91,8 +91,14 @@ const UserDetails = () => {
 
   return (
     <Container maxWidth="sm">
+      <h2 style={{ textAlign: "center", fontS8ize: "34px" }}>User Details</h2>
       <Paper elevation={3} sx={{ padding: 3, marginTop: 5 }}>
-        <Box display="flex" flexDirection="column" alignItems="center">
+        <Box
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          border={"2px solid black"}
+        >
           <Avatar
             src={user.avatar || "https://via.placeholder.com/480x360"}
             alt={user.profile.username || "unknown user"}
@@ -105,9 +111,9 @@ const UserDetails = () => {
             variant="h6"
             color="textSecondary"
             gutterBottom
-            sx={{ background: "gray", borderRadius: "8px", color: "white" }}
+            sx={{ font: "bold", borderRadius: "8px", color: "#000" }}
           >
-            {user.jobTitle}
+            job: {user.jobTitle}
           </Typography>
           <Typography variant="body1" gutterBottom>
             Email: {user.profile.email || "unknown"}
@@ -139,6 +145,8 @@ const UserDetails = () => {
                   display: "flex",
                   alignItems: "center",
                   flexDirection: "column",
+                  height: "100%",
+                  border: "3px solid black",
                 }}
               >
                 <Avatar
